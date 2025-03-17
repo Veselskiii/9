@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Відео з банером</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000;
+            position: relative;
+        }
+        .banner-container {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            gap: 15px; /* Відстань між елементами */
+        }
+        .banner img {
+            width: 300px; /* Збільшено розмір банера */
+            height: auto;
+            cursor: pointer;
+        }
+        .emoji {
+            font-size: 50px;
+        }
+        .video-container {
+            position: relative;
+            width: 80%;
+            max-width: 800px;
+            background: #111;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        iframe {
+            width: 100%;
+            height: 450px; /* Розмір відео */
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner-container">
+        <div class="emoji">👉</div>
+        <a href="https://1wzyuh.com/casino/list/4?p=a7w0" class="banner">
+            <img src="images/banner.png" alt="Банер">
+        </a>
+        <div class="emoji">👈</div>
+    </div>
+    <div class="video-container">
+        <!-- Вставка відео через Google Drive iframe -->
+        <iframe src="https://drive.google.com/file/d/1Qtdn_TFyQn65BRAXmPKA0wm4BG2O0kO2/preview" allow="autoplay"></iframe>
+    </div>
+</body>
+</html>
