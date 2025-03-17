@@ -22,13 +22,14 @@
             transform: translateX(-50%);
             display: flex;
             align-items: center;
-            gap: 15px; /* Відстань між елементами */
+            gap: 15px;
         }
         .banner img {
-            width: 80%; /* Зменшено ширину банера */
-            max-width: 300px; /* Максимальна ширина */
+            width: 80%;
+            max-width: 300px;
             height: auto;
             cursor: pointer;
+            transition: all 0.3s ease-in-out;
         }
         .emoji {
             font-size: 50px;
@@ -43,24 +44,24 @@
         }
         iframe {
             width: 100%;
-            height: 450px; /* Розмір відео */
+            height: 450px;
             border: none;
         }
 
         /* Медіа-запит для мобільних пристроїв */
         @media (max-width: 768px) {
             .banner-container {
-                top: 10px; /* Зменшення відстані для мобільних */
+                top: 10px;
             }
             .banner img {
-                width: 100%; /* Більш адаптована ширина для маленьких екранів */
-                max-width: 400px; /* Зменшення максимального розміру банера */
+                width: 150%; /* Збільшено банер */
+                max-width: 300px; /* Але не більше 300px */
             }
             .video-container {
-                width: 95%; /* Зменшення ширини відео */
+                width: 95%;
             }
             iframe {
-                height: 250px; /* Зменшення висоти відео для мобільних */
+                height: 250px;
             }
         }
     </style>
@@ -74,8 +75,7 @@
         <div class="emoji">👈</div>
     </div>
     <div class="video-container">
-        <!-- Вставка відео через Google Drive iframe -->
-        <iframe src="https://drive.google.com/file/d/1_mEVeCe-QKhxAoDYSH9c_TebSUtVWGid/preview" allow="autoplay"></iframe>
+        <iframe src="https://drive.google.com/file/d/1Qtdn_TFyQn65BRAXmPKA0wm4BG2O0kO2/preview" allow="autoplay"></iframe>
     </div>
 </body>
 </html>
