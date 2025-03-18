@@ -48,14 +48,17 @@
         }
 
 /* Медіа-запит для мобільних пристроїв */
+/* Медіа-запит для мобільних пристроїв */
 @media (max-width: 768px) {
     .banner-container {
         top: 5px;
         flex-direction: column;
     }
     .banner img {
-        width: 80vw; /* 80% ширини екрана */
-        max-width: 400px; /* Максимальний розмір */
+        width: 90vw !important; /* 90% ширини екрана */
+        max-width: 600px !important; /* Збільшений максимальний розмір */
+        height: auto !important; /* Автоматичне збереження пропорцій */
+        display: block;
     }
     .video-container {
         width: 100%; /* Використовує всю ширину екрану */
