@@ -50,13 +50,12 @@
 /* Медіа-запит для мобільних пристроїв */
 @media (max-width: 768px) {
     .banner-container {
-        top: 10px; /* Зменшення відстані для мобільних */
+        top: 5px;
+        flex-direction: column;
     }
-    .banner-container img {
-        width: auto !important; /* Автоматична ширина */
-        max-width: 100% !important; /* Дозволяє займати всю ширину контейнера */
-        height: auto !important; /* Автоматичне співвідношення сторін */
-        display: block;
+    .banner img {
+        width: 80vw; /* 80% ширини екрана */
+        max-width: 400px; /* Максимальний розмір */
     }
     .video-container {
         width: 100%; /* Використовує всю ширину екрану */
